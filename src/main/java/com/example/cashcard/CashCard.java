@@ -1,4 +1,6 @@
 package com.example.cashcard;
 
-record CashCard(Long id, double amount) {
+import org.springframework.data.annotation.Id;
+
+record CashCard(@Id Long id, double amount) {
 }
